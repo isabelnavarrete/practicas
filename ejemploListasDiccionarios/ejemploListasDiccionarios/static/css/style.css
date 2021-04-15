@@ -1,0 +1,18 @@
+p{
+border: 2px #eee solid;
+color:brown;
+text-align:center;
+padding:10px; 
+}
+
+.lista.rojo{
+    background: red;
+}
+
+.lista.azul{
+    background: blue;
+}
+.lista.verde{
+    background: green;
+}
+

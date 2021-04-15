@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="stylesheet" href="../static/css/style.css">
+    <meta charset="UTF-8">
+    <title>{{ slug }}</title>
+</head>
+<body>
+<p>LISTA 2 COLORES</p>
+    {%  for elemento in lista %}
+        {% if loop.index%2==0 %}
+        <div class="lista_2" style="background: green">
+            {{ elemento }}<br>
+        </div>
+        {% else %}
+        <div class="list_1" style="background: blue">
+            {{ elemento }}
+        </div>
+        {% endif %}
+    {% endfor %}
+
+<br>
+
+<p>LISTA 3 COLORES</p>
+    {%  for elemento in lista %}
+        <div class="lista {{ loop.cycle("rojo", "verde", "azul") }}">
+            {{ elemento }}
+        </div>
+    {% endfor %}
+<br>
+<p>DICCIONARIO</p>
+{% for clave in diccionario %}
+
+{{ clave }} :
+
+    {{ diccionario[clave] }}<br>
+
+{% endfor %}
+
+<br>
+<p>LISTA Y DICCIONARIOS</p>
+{% for diccionario in mezclado %}
+
+    {{ diccionario }}:<br>
+
+        {% for lista in mezclado[diccionario] %}
+
+            {{ lista }} <br>
+
+        {% endfor %}<br>
+
+{% endfor %}
+</body>
+</html>
