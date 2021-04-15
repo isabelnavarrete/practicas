@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="stylesheet" href="../static/css/style.css">
+    <meta charset="UTF-8">
+    <title>{{ slug }}</title>
+</head>
+<body>
+<p>Mostrando el post de {{ slug }}</p>
+<p>LISTA</p>
+{%  for elemento in lista %}
+
+    {{ elemento }}<br>
+
+{% endfor %}
+
+<br>
+<p>DICCIONARIO</p>
+{% for clave in diccionario %}
+
+{{ clave }} :
+
+    {{ diccionario[clave] }}<br>
+
+{% endfor %}
+
+<br>
+<p>LISTA Y DICCIONARIOS</p>
+{% for diccionario in mezclado %}
+
+    {{ diccionario }}:<br>
+
+        {% for lista in mezclado[diccionario] %}
+
+            {{ lista }} <br>
+
+        {% endfor %}<br>
+
+{% endfor %}
+</body>
+</html>
