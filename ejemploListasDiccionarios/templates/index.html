@@ -100,8 +100,14 @@
 
 {% for user in mezcladoLD %}
 
-    <div class="{{ 'mayor' if (user.edad > 23) else 'menor' }}">  {{ user if ( user.edad > 23) }}</div>
+    <div class="{{ 'mayor' if (user.edad > 23) else 'menor' }}">{{ user }}</div>
 
+{% endfor %}
+
+<p>OPERADOR TERNARIO MENOR DE 23</p>
+{% for user in mezcladoLD %}
+
+    {{ user if (user.edad > 23) }}<br>
 
 {% endfor %}
 </body>
