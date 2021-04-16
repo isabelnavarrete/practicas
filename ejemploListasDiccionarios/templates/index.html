@@ -23,9 +23,13 @@
 
 <p>LISTA 3 COLORES</p>
     {%  for elemento in lista %}
+
         <div class="lista {{ loop.cycle('rojo', 'verde', 'azul') }}">
+
             {{ elemento }}
+
         </div>
+        
     {% endfor %}
 <br>
 <p>DICCIONARIO</p>
