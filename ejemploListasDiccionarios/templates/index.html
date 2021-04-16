@@ -64,5 +64,41 @@
         {% endfor %}<br>
 
 {% endfor %}
+
+<p>RECORRER BUCLE LISTA CON DICCIONARIOS</p>
+    {% for diccionario in mezcladoLD %}
+
+    {% for clave,valor in diccionario.items() %}
+
+        {% if diccionario[clave] > 23 %}
+
+            {{ clave }}:
+
+            {{ diccionario[clave] }}
+
+        {% endif %}
+
+{% endfor %}<br>
+
+{% endfor %}
+
+<p>DOBLE BUCLE A LA LISTA</p>
+{% for elemento in lista %}
+
+        {% for clave in lista %}
+
+            <div class=".clase_indicepadre_indicehijo">
+
+            {{ [lista.index(elemento)] }} {{ [lista.index(clave)] }}
+
+            {{ elemento }} - {{ clave }} =
+
+            {{ elemento - clave }} <br>
+
+            </div>
+
+        {% endfor %}<br>
+
+{% endfor %}
 </body>
 </html>
