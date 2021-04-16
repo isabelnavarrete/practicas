@@ -8,15 +8,25 @@
 <body>
 <p>LISTA 2 COLORES</p>
     {%  for elemento in lista %}
+
         {% if loop.index%2==0 %}
+
         <div class="lista_2" style="background: green">
+
             {{ elemento }}<br>
+
         </div>
+
         {% else %}
+
         <div class="list_1" style="background: blue">
+
             {{ elemento }}
+
         </div>
+
         {% endif %}
+
     {% endfor %}
 
 <br>
@@ -29,7 +39,7 @@
             {{ elemento }}
 
         </div>
-        
+
     {% endfor %}
 <br>
 <p>DICCIONARIO</p>
