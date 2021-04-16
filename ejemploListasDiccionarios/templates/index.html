@@ -87,12 +87,22 @@
             <div class="clase_{{ firstLoop.index }}_{{ loop.index }}">
 
             {{ [firstLoop.index] }}{{ [loop.index] }}
-                
+
             {{ elemento }} - {{ clave }}  <br>
 
             </div>
 
         {% endfor %}<br>
+
+{% endfor %}
+
+<p>OPERADOR TERNARIO</p>
+
+{% for user in mezcladoLD %}
+
+    <div class="{{ 'mayor' if (user.edad > 23) else 'menor' }}"></div>
+    
+    {{ user if ( user.edad > 23) }}
 
 {% endfor %}
 </body>
