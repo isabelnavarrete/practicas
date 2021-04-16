@@ -77,17 +77,18 @@
     {% endfor %}
 
 <p>DOBLE BUCLE A LA LISTA</p>
+
 {% for elemento in lista %}
+
+    {% set firstLoop = loop %}
 
         {% for clave in lista %}
 
-            <div class=".clase_indicepadre_indicehijo">
+            <div class="clase_{{ firstLoop.index }}_{{ loop.index }}">
 
-            {{ [lista.index(elemento)] }} {{ [lista.index(clave)] }}
-
-            {{ elemento }} - {{ clave }} =
-
-            {{ elemento - clave }} <br>
+            {{ [firstLoop.index] }}{{ [loop.index] }}
+                
+            {{ elemento }} - {{ clave }}  <br>
 
             </div>
 
