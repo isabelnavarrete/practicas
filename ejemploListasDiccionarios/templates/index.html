@@ -68,19 +68,13 @@
 <p>RECORRER BUCLE LISTA CON DICCIONARIOS</p>
     {% for diccionario in mezcladoLD %}
 
-    {% for clave,valor in diccionario.items() %}
+        {% if diccionario.edad > 23 %}
 
-        {% if diccionario[clave] > 23 %}
-
-            {{ clave }}:
-
-            {{ diccionario[clave] }}
+            {{ diccionario }}
 
         {% endif %}
 
-{% endfor %}<br>
-
-{% endfor %}
+    {% endfor %}
 
 <p>DOBLE BUCLE A LA LISTA</p>
 {% for elemento in lista %}
