@@ -105,10 +105,20 @@
 {% endfor %}
 
 <p>OPERADOR TERNARIO MAYOR DE 23</p>
+
 {% for user in mezcladoLD %}
 
     {{ user if (user.edad > 23) }}<br>
 
 {% endfor %}
+
+<p> FOR CON CONDICION</p>
+
+{% for user in mezcladoLD if user.edad > 23 %}
+
+    {{ user }}<br>
+
+{% endfor %}
+
 </body>
 </html>
