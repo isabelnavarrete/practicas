@@ -1,0 +1,56 @@
+
+@media (max-width: 767px) {
+  .services_icon_block {
+    padding: 15px 0;
+    margin: 15px 0;
+  }
+}
+.services_icon_block .content_title {
+  width: 100%;
+  text-align: left;
+  position: relative;
+  margin: 0 auto 40px;
+}
+.services_icon_block .content_title .title {
+  font-size: 43px;
+  font-family: sans serif;
+  color: #4d4d4d;
+  font-weight: 700;
+  line-height: 45px;
+  letter-spacing: 0;
+  margin: 0;
+  padding: 0;
+}
+.services_icon_block .content_title .title small,
+.services_icon_block .content_title .title span,
+.services_icon_block .content_title .title .subtitle {
+  font-size: 19px;
+  line-height: 23px;
+  font-family: sans serif;
+  font-weight: 500;
+  color: pink;
+  display: block;
+}
+.services_icon_block .icons_wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.services_icon_block .icons_wrapper .icon {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: flex-start;
+}
+.services_icon_block .icons_wrapper .icon i {
+  width: 50px;
+  font-size: 30px;
+  text-align: center;
+  color: pink;
+}
+.services_icon_block .icons_wrapper .icon span {
+  font-family: sans serif;
+  color: #4d4d4d;
+  font-size: 17px;
+  letter-spacing: 1px;
+  padding-left: 22px;
+}

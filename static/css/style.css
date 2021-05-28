@@ -1,0 +1,104 @@
+header.header_splited_menu {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 8;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 40px calc((100% - 1140px) / 2);
+    background: linear-gradient(#afabb4, #808080);
+}
+
+header.header_splited_menu a {
+    color: white;
+    text-decoration: none;
+}
+
+header.header_splited_menu a:hover {
+    color: pink;
+}
+
+header.header_splited_menu .top_header {
+    display: flex;
+    font-size: 10px;
+}
+
+header.header_splited_menu .top_header .left,
+header.header_splited_menu .top_header .right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+header.header_splited_menu .top_header .right {
+    text-align: right;
+    justify-content: flex-end;
+}
+
+header.header_splited_menu .top_header .left a {
+    display: inline-block;
+    padding: 0 8px;
+}
+
+header.header_splited_menu .top_header .left a i {
+    font-size: 1rem;
+}
+
+header.header_splited_menu .top_header .weather-block {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+header.header_splited_menu .top_header .weather-block img {
+    height: 30px;
+}
+
+header.header_splited_menu .top_header .weather-block span {
+    display: inline-block;
+    padding: 0 4px;
+}
+
+header.header_splited_menu .top_header .weather-block .city {
+    border-right: 2px solid white;
+}
+
+header.header_splited_menu .top_header .top_section {
+    padding-right: 30px;
+}
+
+header.header_splited_menu .top_header .top_section a i {
+    font-size: 1.2rem;
+}
+
+header.header_splited_menu .top_header .top_section a i,
+header.header_splited_menu .top_header .top_section a span {
+    line-height: 1.2rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header.header_splited_menu .logo {
+    width: 200px;
+}
+
+header.header_splited_menu nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    font-size: 13px;
+}
+
+header.header_splited_menu nav .half {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header.header_splited_menu nav a {
+    display: block;
+    padding: 8px;
+    text-align: center;
+}

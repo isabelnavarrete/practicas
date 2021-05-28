@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/contact.css') }}" >
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+<div class="contact_form_main_wrapper">
+			<div class="container">
+				<div class="container-left">
+					<div class="container-title">
+						<h1>Contacte con nosotros</h1>
+					</div>
+                  	<div class="container-text">
+                      <div class="container-text">
+                      ¿Tiene alguna pregunta o quiere resolver alguna duda?<br>
+						Rellene este formulario de contacto y le responderemos a todas sus consultas con la mayor rapidez.<br><br>
+
+						<i class="fas fa-map-pin" style="color:#189e90"></i> Tarragona 48560 BELNAV HOTELS<br>
+						<i class="fas fa-phone" style="color:#189e90"></i> (+34) 600 67 55 20 | (+34) 600 67 55 20
+						 <br>
+						<i class="fas fa-envelope" style="color:#189e90"></i> 
+						isabelmhn13@gmail.com<br><br>
+
+						Nuestras coordenadas, para programar el GPS:<br>
+						Latitud 19.5105164<br>
+						Longitud -0.3453916<br>
+                  	</div>
+                  	</div>
+				</div>
+				<div class="container-right">
+					<div class="contact_form_wrapper">
+						<form>
+							<div class="contactform-line">
+								<input type="text" name="name" id="name" required/>
+								<label for="name"><N>NOMBRE*</N></label>
+								<line></line>
+							</div>
+							<div class="contactform-line">
+								<input type="text" name="email" id="email" required/>
+								<label for="email">Email*</label>
+								<line></line>
+							</div>
+							<div class="contactform-line">
+								<input type="tel" name="telephone" id="telephone" required/>
+								<label for="telephone">TELEFONO*</label>
+								<line></line>
+							</div>
+							<div class="contactform-line">
+								<textarea name="comments" id="comments"></textarea>
+								<label for="comments">COMENTARIOS</label>
+								<line></line>
+							</div>
+							<div class="contactform-checkbox">
+                              	<input type="checkbox" id="accept-term" name="accept_term" required="">
+                    			<a data-fancybox data-type="iframe" class="myFancyPopup fancybox.iframe" href="{{ language_code }}/?sectionContent=politica-de-privacidad.html" rel="nofollow">{{ T_lopd }}</a>
+							</div>
+							<div class="contactform-button">
+								<button type="submit" class="submit_contact_form">
+									ENVIAR <i class="fas fa-arrow-right"></i>
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+<script src="{{ url_for('static', filename='js/jquery-3.6.0.min.js') }}"></script>
+</body>
+</html>

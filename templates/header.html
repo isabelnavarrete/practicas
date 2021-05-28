@@ -1,0 +1,33 @@
+
+<div class="top_header">
+    <div class="left">
+        <a href="tel:900000000"><i class="fas fa-phone"></i></a>
+        <a href="mailto:isabelmhn13@gmail.com"><i class="fas fa-envelope"></i></a>
+        <div class="weather-block">
+            <span class="city">ESPAÑA</span>
+        </div>
+    </div>
+    <div class="right">
+        <div class="top_section">
+            <span>MIS RESERVAS</span>
+            <a href="{{ url_for('my_rooms')}}">
+                <i class="fas fa-align-justify"></i>
+            </a>
+        </div>
+    </div>
+</div>
+<nav>
+    <div class="half">
+        <a href="{{ url_for('principal')}}">INICIO</a>
+        <a href="{{ url_for('newsletter')}}">NEWLETTERS</a>
+        <a href="{{ url_for('rooms')}}">HABITACIONES</a>
+    </div>
+    <div class="logo">
+        <a href="/"><img src="{{ url_for('static', filename='images/logo1.png') }}"></a>
+    </div>
+    <div class="half">
+        <a href="{{ url_for('hotel')}}">EL HOTEL</a>
+        <a href="{{ url_for('index')}}">GALERÍA</a>
+        <a href="{{ url_for('contact')}}">CONTACTO</a>
+    </div>
+</nav>

@@ -1,0 +1,40 @@
+.iframe-google-maps-wrapper {
+  margin-top: 30px;
+  width: 100%;
+  padding-bottom: 30px;
+}
+.iframe-google-maps-wrapper iframe {
+  width: 100%;
+  margin-top: 10px;
+}
+.iframe-google-maps-wrapper iframe.mapa {
+  height: 500px;
+}
+.iframe-google-maps-wrapper input[type=text] {
+  display: inline-block;
+  width: 32%;
+  border: 2px solid pink;
+  padding: 0px 10px;
+  height: 42px;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+.iframe-google-maps-wrapper button {
+  display: inline-block;
+  width: 18%;
+  border: 2px solid pink;
+  background-color: pink;
+  color: white;
+  padding: 9px ;
+  box-sizing: border-box;
+  cursor: pointer;
+  -webkit-transition: all .7s;
+  -moz-transition: all .7s;
+  -ms-transition: all .7s;
+  -o-transition: all .7s;
+  transition: all .7s;
+}
+.iframe-google-maps-wrapper button:hover {
+  background: white;
+  color: pink;
+}

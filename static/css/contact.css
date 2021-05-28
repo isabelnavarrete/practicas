@@ -1,0 +1,134 @@
+@font-face {
+  font-family: 'Muli';
+  src: url("../fonts/Muli/Muli.eot");
+  src: url("../fonts/Muli/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli/Muli.woff") format("woff"), url("../fonts/Muli/Muli.svg#Muli") format("svg");
+}
+@font-face {
+  font-family: 'Playfair Display Regular';
+  src: url("../fonts/playfair_display/PlayfairDisplay-Regular.eot");
+  src: url("../fonts/playfair_display/PlayfairDisplay-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/playfair_display/PlayfairDisplay-Regular.woff") format("woff"), url("../fonts/playfair_display/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular") format("svg");
+}
+@font-face {
+  font-family: 'Playfair Display Bold';
+  src: url("../fonts/playfair_display/PlayfairDisplay-Bold.eot");
+  src: url("../fonts/playfair_display/PlayfairDisplay-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/playfair_display/PlayfairDisplay-Bold.woff") format("woff"), url("../fonts/playfair_display/PlayfairDisplay-Bold.svg#PlayfairDisplay-Regular") format("svg");
+}
+.contact_form_main_wrapper {
+  width: 100%;
+  max-width: 1140px;
+  min-width: 748px;
+  margin: 0 auto;
+}
+.contact_form_main_wrapper .container {
+  display: grid;
+  grid-gap: 0;
+  grid-template-columns: 50% 50%;
+}
+.contact_form_main_wrapper .container .container-left .container-title {
+  width: 17em;
+}
+.contact_form_main_wrapper .container .container-left .container-title h1 {
+  font-family: "Playfair Display";
+  font-weight: 800;
+  font-size: 2.5em;
+  margin: 0;
+  line-height: 1.4em;
+  color: #fff;
+}
+.contact_form_main_wrapper .container .container-left .container-text {
+  font-weight: 500;
+  font-size: 0.9em;
+  margin: 0;
+  line-height: 2.1em;
+  display: block;
+  margin-top: 30px;
+}
+.contact_form_main_wrapper .container .container-right {
+  padding-left: 60px;
+}
+.contact_form_main_wrapper .container .container-right .contactform-line {
+  position: relative;
+  margin-top: 30px;
+  font-family: "Playfair Display";
+  font-size: 16px;
+}
+.contact_form_main_wrapper .container .container-right .contactform-line label {
+  position: absolute;
+  bottom: 6px;
+  left: 0;
+  transition: .3s all ease;
+  font-size: 14px;
+  width: 100%;
+  color: #888888;
+}
+.contact_form_main_wrapper .container .container-right .contactform-line input:valid + label, .contact_form_main_wrapper .container .container-right .contactform-line input:focus + label {
+  bottom: 30px;
+  font-size: 10px;
+}
+.contact_form_main_wrapper .container .container-right .contactform-line textarea:focus + label, .contact_form_main_wrapper .container .container-right .contactform-line .textarea-labelup {
+  bottom: 60px;
+  font-size: 10px;
+}
+.contact_form_main_wrapper .container .container-right .contactform-line input:focus + label, .contact_form_main_wrapper .container .container-right .contactform-line textarea:focus + label {
+  color: #555;
+}
+.contact_form_main_wrapper .container .container-right .contactform-line line:before {
+  content: '';
+  position: absolute;
+  background: #555;
+  width: 0;
+  height: 2px;
+  right: 50%;
+  bottom: 0;
+}
+.contact_form_main_wrapper .container .container-right .contactform-line input:focus ~ line:before, .contact_form_main_wrapper .container .container-right .contactform-line textarea:focus ~ line:before {
+  width: 100%;
+  right: 0;
+  transition: all .3s ease;
+}
+.contact_form_main_wrapper .container .container-right .contactform-line input, .contact_form_main_wrapper .container .container-right .contactform-line textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #eee;
+}
+.contact_form_main_wrapper .container .container-right .contactform-line input:focus, .contact_form_main_wrapper .container .container-right .contactform-line textarea:focus {
+  outline: none;
+}
+.contact_form_main_wrapper .container .container-right .contactform-line input {
+  height: 32px;
+}
+.contact_form_main_wrapper .container .container-right .contactform-line textarea {
+  resize: vertical;
+}
+.contact_form_main_wrapper .container .container-right .contactform-checkbox {
+  margin-top: 20px;
+  color: #868585;
+}
+.contact_form_main_wrapper .container .container-right .contactform-checkbox label, .contact_form_main_wrapper .container .container-right .contactform-checkbox a {
+  text-decoration: underline;
+  color: inherit;
+  font-weight: 400;
+}
+.contact_form_main_wrapper .container .container-right .contactform-checkbox label:hover, .contact_form_main_wrapper .container .container-right .contactform-checkbox a:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.contact_form_main_wrapper .container .container-right .contactform-button {
+  margin-top: 20px;
+}
+.contact_form_main_wrapper .container .container-right .contactform-button .submit_contact_form {
+  border: 1px solid #555;
+  background-color: #555;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  width: 184px;
+  height: 50px;
+  cursor: pointer;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.contact_form_main_wrapper .container .container-right .contactform-button .submit_contact_form i {
+  margin-left: 12px;
+}
